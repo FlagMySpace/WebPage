@@ -1,0 +1,14 @@
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\FlagSpace.dll.config
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\FlagSpace.dll
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\FlagSpace.pdb
+E:\Start sby\Landing page\FlagSpace\FlagSpace\obj\Debug\FlagSpace.csprojResolveAssemblyReference.cache
+E:\Start sby\Landing page\FlagSpace\FlagSpace\obj\Debug\FlagSpace.dll
+E:\Start sby\Landing page\FlagSpace\FlagSpace\obj\Debug\FlagSpace.pdb
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\Antlr3.Runtime.dll
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\Microsoft.Web.Infrastructure.dll
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\Newtonsoft.Json.dll
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\System.Web.Optimization.dll
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\WebGrease.dll
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\Antlr3.Runtime.pdb
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\Newtonsoft.Json.xml
+E:\Start sby\Landing page\FlagSpace\FlagSpace\bin\System.Web.Optimization.xml
