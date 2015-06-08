@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlagSpace", "FlagSpace\FlagSpace.csproj", "{43C5B94E-DDA9-4227-B00D-E64457CF76CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlagMySpaceWeb", "FlagMySpaceWeb\FlagMySpaceWeb.csproj", "{DC7ACF67-4BC6-4AE5-AE97-4003CB7C037F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{43C5B94E-DDA9-4227-B00D-E64457CF76CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43C5B94E-DDA9-4227-B00D-E64457CF76CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43C5B94E-DDA9-4227-B00D-E64457CF76CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7ACF67-4BC6-4AE5-AE97-4003CB7C037F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7ACF67-4BC6-4AE5-AE97-4003CB7C037F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7ACF67-4BC6-4AE5-AE97-4003CB7C037F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7ACF67-4BC6-4AE5-AE97-4003CB7C037F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
