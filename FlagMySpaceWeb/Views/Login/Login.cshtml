@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Login ke Halaman Admin
+    </title>
+    @Styles.Render("~/Content/login_form.css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" id="wrapper">
+                @using (Html.BeginForm("Login", "Login", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class="login-form" }))
+                {
+                    <div class="header">
+                        <h1>Flag My Space</h1>
+                        <span>Login</span>
+                    </div>
+                    <div class="content" align="center">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-1">
+                                <div class="form-group">
+                                    <input name="username" type="text" id="uid" class="input username form-control" placeholder="Username" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-1">
+                                <div class="form-group">
+                                    <input name="password" type="password" id="pid" class="input password form-control" placeholder="Password" />
+                                </div>
+                                <div class="form-group">
+                                    <font color="red" class="notif"><?php echo $notification; ?></font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer">
+                                <div align="center">
+                                    <input type="submit" name="submit-login" value="Login" class="login-button" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+
+

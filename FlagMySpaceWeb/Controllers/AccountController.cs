@@ -46,6 +46,13 @@ namespace FlagMySpaceWeb.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public ActionResult doLogin(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
         //
         // POST: /Account/Login
         [HttpPost]
@@ -474,5 +481,11 @@ namespace FlagMySpaceWeb.Controllers
         }
 
         #endregion
+
+        [AllowAnonymous]
+        public ActionResult LoginForm()
+        {
+            return View();
+        }
     }
 }
