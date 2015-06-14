@@ -24,12 +24,14 @@
                     <div class="header">
                         <h1>Flag My Space</h1>
                         <span>Register</span>
+                        <br /><font color="red" id="form-error"></font>
+                        <br /><font color="green" id="form-success"></font>
                     </div>
                     <div class="content" align="center">
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-1">
                                 <div class="form-group">
-                                    <input name="username" type="text" id="uid" class="input password form-control" placeholder="Username" />
+                                    <input name="username" type="text" id="username" class="input password form-control" placeholder="Username" />
                                 </div>
                             </div>
                             <div class="col-lg-8 col-lg-offset-1">
@@ -44,7 +46,7 @@
                             </div>
                             <div class="col-lg-8 col-lg-offset-1">
                                 <div class="form-group">
-                                    <input name="password_confirm" type="password" id="password_confirm" class="input password form-control" placeholder="Confirm Password" />
+                                    <input name="password_confirm" type="password" id="password-confirm" class="input password form-control" placeholder="Confirm Password" />
                                 </div>
                             </div>
                             <div class="col-lg-8 col-lg-offset-1">
@@ -58,7 +60,8 @@
                         <div class="col-lg-12">
                             <div class="footer">
                                 <div align="center">
-                                    <input type="submit" name="submit-login" value="Register" class="login-button" />
+                                    <!--<input type="submit" name="submit-login" value="Register" class="login-button" />-->
+                                    <a href="javascript:void(0)" id="submit-register" name="submit-login" class="login-button">Register</a>
                                 </div>
                             </div>
                         </div>
@@ -69,6 +72,55 @@
     </div>
     </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            Parse.initialize("0CfufDW1fVFTkeXQqrFPbhygiRmtxtiznMqDEtxS", "eJboXzCTv3wpx7y9cWglDbFYNZC4kB1FNUbx9tAf");
+
+            $("#form-error").html("");
+            $("#form-success").html("");
+            $("#form-error").hide();
+            $("#form-success").hide();
+
+            $("#submit-register").click(function ()
+            {
+                var username = $("#username").val();
+                var email = $("#email").val();
+                var password = $("#password").val();
+                var password_confirm = $("#password-confirm").val();
+                var is_valid = true;
+                
+                if (username == "" || email == "" || password == "" || password_confirm == "")
+                {
+                    is_valid = false
+                }
+                else if (password != password_confirm)
+                {
+                    $("#form-error").html("Password tidak cocok!");
+                    $("#form-error").show();
+                    is_valid = false;
+                }
+                if (is_valid)
+                {
+                    var UserObject = Parse.Object.extend("User");
+                    var userObject = new UserObject();
+                    userObject.save({ username: username, password: password, email: email },
+                    {
+                        success: function (object)
+                        {
+                            $("#form-success").html("Register Sukses!");
+                            $("#form-success").show();
+                        },
+                        error: function (model, error)
+                        {
+                            $("#form-error").html("Register Gagal!");
+                            $("#form-error").show();
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
